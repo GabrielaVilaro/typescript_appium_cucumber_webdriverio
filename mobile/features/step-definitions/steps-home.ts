@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
 import LoginScreen from '../screen-objects/login-screen';
 import HomeScreen from '../screen-objects/home-screen';
-import InvestinmentsScreen from '../screen-objects/investinments-screen';
+import InvestmentsScreen from '../screen-objects/investments-screen';
 import DepositScreen from '../screen-objects/deposit-screen';
 
 Given("I am on the login view", async () => {
@@ -9,7 +9,7 @@ Given("I am on the login view", async () => {
 });
 
 When("I tap investinments", async () => {
-    await HomeScreen.tapInvestinments(); 
+    await HomeScreen.tapInvestments(); 
 });
 
 When("I am tap init", async () => {
@@ -21,6 +21,6 @@ When("I tap deposit", async () => {
 });
 
 Then(/^I should see a message saying (.*)$/, async (message) => {
-    expect(InvestinmentsScreen.textPortfolio).toBeExisting()
+    expect(InvestmentsScreen.textPortfolio).toBeExisting()
     expect(DepositScreen.textDeposit).toHaveTextContaining(message);
 });

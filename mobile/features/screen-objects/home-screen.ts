@@ -15,7 +15,7 @@ class HomeScreen {
         return $("//*[@text='Ingresar']");
     }
 
-    public async tapInvestinments (): Promise<void> {
+    public async tapInvestments (): Promise<void> {
         await BaseScreen.tapElement(this.investments);
     }
 
