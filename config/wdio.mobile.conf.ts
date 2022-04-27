@@ -146,12 +146,7 @@ export const config: WebdriverIO.Config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: [
         'spec',
-        ['junit', {
-            outputDir: 'junit-results',
-            outputFileFormat: (options: { cid: string; capabilities: any; }): string =>  {
-                return `results-${options.cid}.${options.capabilities.platformName}.xml`
-            },
-        }],
+        
         ['allure', {
             outputDir: 'allure-results'
         }]

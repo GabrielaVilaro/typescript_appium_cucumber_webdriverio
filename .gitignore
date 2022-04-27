@@ -1,5 +1,4 @@
 node_modules
 .tsbuild
 allure-results
-junit-results
-config
+allure-report
