@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 export const config: WebdriverIO.Config = {
     //
     // ====================
@@ -58,9 +60,9 @@ export const config: WebdriverIO.Config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        platformName: "Android",
-        platformVersion: "11",
-        deviceName: "emulator_arm64",
+        platformName: process.env.PLATFORM_NAME,
+        platformVersion: process.env.PLATFORM_VERSION,
+        deviceName: process.env.DEVICE_NAME,
         automationName: "UiAutomator2",
         appPackage: "com.buengroup.buenbit",
         appActivity: "com.buengroup.buenbit.MainActivity",
@@ -146,7 +148,7 @@ export const config: WebdriverIO.Config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: [
         'spec',
-        
+
         ['allure', {
             outputDir: 'allure-results'
         }]

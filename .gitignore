@@ -2,3 +2,4 @@ node_modules
 .tsbuild
 allure-results
 allure-report
+.env
