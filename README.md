@@ -26,6 +26,10 @@ Allure reporting
 - install node 16 with nvm ```nvm install 16```
 - install [appium Server GUI (version v1.22.2 for macos)](https://github.com/appium/appium-desktop/releases)
 - install [android studio](https://developer.android.com/studio)
+- install [sdkman](https://sdkman.io/install)
+- install java 8 with sdkman ```sdk install java 8.0.322-zulu```
+- install allure reporter ```npm install -g allure-commandline --save-dev```
+
 
 ## How to run 
 ### Create emulator

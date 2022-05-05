@@ -2,3 +2,5 @@ node_modules
 .tsbuild
 allure-results
 allure-report
+yarn.lock
+package-lock.json
